@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #define BUFFER_SIZE 80
@@ -31,10 +32,9 @@ void verlanWeshDiabolique(char * buffer)
             buffer++;
         }
         inverserMot(ptr, buffer);
-        ptr = buffer;
+        ptr = buffer++;
 
-
-    }
+    //)}
 }
 
 int main()
@@ -57,3 +57,4 @@ int main()
     printf("%s\n", phrase2);
     return 0;
 }
+
