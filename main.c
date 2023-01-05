@@ -24,14 +24,14 @@ void inverserMot(char * ptrDebutMot, char * ptrFinMot)
 void verlanWeshDiabolique(char * buffer)
 {
     char * ptr = buffer;
-    while(*buffer != '\0')
+    while(*buffer != '\0') //Pour que buffer pointe sur le dernier caractère du mot
     {
         while(*buffer != ' ')
         {
             buffer++;
         }
         inverserMot(ptr, buffer);
-        *ptr = *buffer;
+        ptr = buffer;
 
 
     }
